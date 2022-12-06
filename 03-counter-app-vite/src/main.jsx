@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
 // Con esos dos elementos se puede renderizar la aplicación
+import { FirstApp } from './FirstApp';
+import './styles.css'
 
 
 // Se procede a Renderizar
@@ -9,6 +10,6 @@ import ReactDOM from 'react-dom/client';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <App />
+        <FirstApp title="Hola, Soy Goku" subTitle={ 123 }/>
     </React.StrictMode>
 )
