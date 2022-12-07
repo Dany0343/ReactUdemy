@@ -13,14 +13,16 @@ export const FirstApp = ({ title, subTitle, name }) => { // Se desestructura de 
     )
 }
 
-FirstApp.propTypes = { // Se importo como PropTypes pero aquí se utiliza como propTypes
+const propTypes = {
     title: PropTypes.string.isRequired, // Es obligatorio
     subTitle: PropTypes.string,
-} 
+}
+
+FirstApp.propTypes = propTypes
 
 
 // Hay otra manera de definir los parametros por defecto, los default props entran antes que los propTypes
-FirstApp.defaultProps = { // Se puede definir cualquier cantidad de propiedades por defecto e incluso se pueden poner propiedades que 
+FirstApp.defaultProps = { 
     title: 'No hay titulo',
     subTitle: 'No hay subtitulo', // Aquí si evalua el PropType
     name: 'Oscar Bucio' // Se puede implementar un defaultprop para una prop aunque no la hayamos desestructurado, se puede ver en las devtools, como se recibe el prop. Despues si se puede desestructurar para usarlo

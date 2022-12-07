@@ -1,7 +1,9 @@
+// Con esos dos elementos se puede renderizar la aplicación
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// Con esos dos elementos se puede renderizar la aplicación
-import { FirstApp } from './FirstApp';
+
+import { CounterApp } from './CounterApp';
+// import { FirstApp } from './FirstApp';
 import './styles.css'
 
 
@@ -10,6 +12,6 @@ import './styles.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <FirstApp />
+        <CounterApp value={10}/>
     </React.StrictMode>
 )
