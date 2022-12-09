@@ -1,15 +1,25 @@
-// Tarea
 import PropTypes from 'prop-types';
+
+// Se recomienda que si una función no ocupa nada del componente donde está alojada, se recomienda que esté fuera
+const handleAdd = ( event ) => { 
+    console.log(event) 
+}
+
 
 // Componente, functional component
 export const CounterApp = ({ value }) => {
 
 
     return (
+
         // Fragment
         <>
             <h1>CounterApp</h1>
             <p>{value}</p>
+
+            <button onClick={ handleAdd }>
+                +1
+            </button>
         </>
     )
 }
